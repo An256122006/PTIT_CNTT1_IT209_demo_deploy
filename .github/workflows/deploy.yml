@@ -54,7 +54,7 @@ jobs:
           command_timeout: 5m
           script: |
             set -e
-            cd ~/devops-exam/PTIT_CNTT1_IT209_Session14
+            cd ~/PTIT_CNTT1_IT209_demo_deploy
             GIT_TERMINAL_PROMPT=0 git pull --ff-only origin master
             cat > .env <<'EOF'
             MYSQL_DATABASE=${{ secrets.MYSQL_DATABASE }}
